@@ -1,0 +1,93 @@
+/* 
+CSS Writing Flow: 
+
+--> Layout First
+--> Custom Styling After
+
+*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body{
+    /* background-image: url('green-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    /* border: 1px solid red; */
+    text-align: center;
+    font-weight: 600;
+}
+
+.form{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 400px;
+    height: auto;
+    padding: 2rem;
+    border-radius:  4px;
+    /* color: white; */
+
+
+    /* Glass Morphism */
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.div-input{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;           /* full width of container */
+  padding: 0.5rem;       /* inner spacing */
+  font-size: 1rem;       /* text size */
+  border: 1px solid #ccc;/* light gray border */
+  border-radius: 4px;    /* rounded corners */
+  box-sizing: border-box;
+}
+
+button[type="submit"]{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #39FF14;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover{
+    background-color: #2FCC10 ;
+}
+
+
+
+/*  */
